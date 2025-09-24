@@ -3,6 +3,10 @@
     display: flex;
     justify-content: center;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
 #navlogo {
     width: 20%;
@@ -60,21 +64,33 @@
 #vidoverlay h2 {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
+.deskwrapper {
+    width: 100%;
+    @include centerify();
+    background-color: black;
+    color: white;
+}
 
 .Desktopcontent {
     @include centerify();
-    gap: 30%;
+    background-color: black;
+    width: 100%;
+    height: 40rem;
+    gap: 5%;
 }
 .innerDesktop {
-    height: 30rem;
+    height: 40rem;
+    width: fit-content;
+}
+.deskpic {
+    height: 90%;
     width: auto;
-    border-style: solid;
 }
 .headingwrapper {
     @include centerify();
 }
 .MobileContent {
-    height: 30rem;
+    height: 40rem;
     position: relative;
 }
 .slideswrapper {
@@ -89,31 +105,23 @@
     text-align: center;
     margin-right: 5%;
 }
-#picone {
-    height: 30rem;
-    width: auto;
-}
-#pictwo {
-    height: 30rem;
-    width: auto;
-}
-#picthree {
-    height: 30rem;
-    width: auto;
+.phonepic {
+    height: 40rem;
+    width: 60rem;
 }
 .off {
     display: none;
 }
-#back, #next {
-    position: absolute;
-    bottom: 1rem;  
-    padding: 0.5rem 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-#next {
-    right: 1rem;
-}
-#back {
-    right: 5rem;
-}
+// #back, #next {
+//     position: absolute;
+//     bottom: 1rem;  
+//     padding: 0.5rem 1rem;
+//     font-size: 1.5rem;
+//     cursor: pointer;
+// }
+// #next {
+//     right: 1rem;
+// }
+// #back {
+//     right: 5rem;
+// }
