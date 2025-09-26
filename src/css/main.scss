@@ -74,54 +74,59 @@ html, body {
 .Desktopcontent {
     @include centerify();
     background-color: black;
-    width: 100%;
-    height: 40rem;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
     gap: 5%;
+
 }
 .innerDesktop {
-    height: 40rem;
-    width: fit-content;
+    text-align: center;
+    height: auto;
+    color: white;
+    margin-bottom: 3%;
 }
+÷
 .deskpic {
-    height: 90%;
+    height: 40%;
     width: auto;
+}
+.desc {
+  max-width: 300px;  
+  margin: 0 auto;     
+  text-align: center; 
 }
 .headingwrapper {
     @include centerify();
 }
 .MobileContent {
-    height: 40rem;
+    height: auto;
+    width: 100%;
     position: relative;
 }
 .slideswrapper {
+    flex-wrap: wrap;
     @include centerify();
 }
 .slide {
     @include centerify();
-    margin-left: 8%;
-    margin-right: 8%;
+
+    height: auto;
+    width: 100%;
 }
 .center {
+    margin-top: 3%;
+    width: 30%;
     text-align: center;
-    margin-right: 5%;
 }
 .phonepic {
-    height: 40rem;
-    width: 60rem;
+    width: auto;
+    height: 100%;
+    
 }
 .off {
     display: none;
 }
-// #back, #next {
-//     position: absolute;
-//     bottom: 1rem;  
-//     padding: 0.5rem 1rem;
-//     font-size: 1.5rem;
-//     cursor: pointer;
-// }
-// #next {
-//     right: 1rem;
-// }
-// #back {
-//     right: 5rem;
-// }
+.periwrapper {
+    @include centerify();
+}
