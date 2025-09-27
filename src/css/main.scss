@@ -186,3 +186,21 @@ html, body {
   font-size: 1.5rem;
   cursor: pointer;
 }
+.footcontent {
+    @include centerify();
+    background-color: black;
+
+    height: auto;
+    
+
+}
+.innerfoot {
+    text-align: center;
+    color: white;
+    width: 33%
+
+}
+
+#socials {
+    width: 20%
+}
