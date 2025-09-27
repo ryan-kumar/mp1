@@ -31,3 +31,31 @@ window.switchSlide = function(value) {
         document.getElementById("two").classList.add("off");
     }
 }
+
+window.modal = function(item) {
+    if (item == 1) {
+        document.getElementById("modal1").classList.remove("off");
+        document.getElementById("modal1").classList.add("modal");
+    } else if (item == 2) {
+        document.getElementById("modal2").classList.remove("off");
+        document.getElementById("modal2").classList.add("modal");
+    } else if (item == 3) {
+        document.getElementById("modal3").classList.remove("off");
+        document.getElementById("modal3").classList.add("modal");
+    } else if (item == 4) {
+        document.getElementById("modal4").classList.remove("off");
+        document.getElementById("modal4").classList.add("modal");
+    } else if (item == -1) {
+        document.getElementById("modal1").classList.add("off");
+        document.getElementById("modal1").classList.remove("modal");
+    } else if (item == -2) {
+        document.getElementById("modal2").classList.add("off");
+        document.getElementById("modal2").classList.remove("modal");
+    } else if (item == -3) {
+        document.getElementById("modal3").classList.add("off");
+        document.getElementById("modal3").classList.remove("modal");
+    } else if (item == -4) {
+        document.getElementById("modal4").classList.add("off");
+        document.getElementById("modal4").classList.remove("modal");
+    }
+}

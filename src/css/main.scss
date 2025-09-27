@@ -130,3 +130,59 @@ html, body {
 .periwrapper {
     @include centerify();
 }
+.PeripheralContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.item {
+    text-align: center;
+    border-style: solid;
+}
+.web {
+    width: 80%;
+    height: auto;
+}
+.key {
+    width: 80%;
+    height: auto;
+}
+.mon {
+   width: 60%;
+    height: auto;
+} 
+.head {
+    width: 85%;
+    height: auto;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  inset: 0; 
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+
+}
+
+.modal-content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  width: 70%;
+  height: 60%;
+}
+
+.close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

@@ -106,11 +106,56 @@
           <h1 id="periheader">Accessorize your life away.</h1>
         </div>
         <div class="PeripheralContent">
-          <div class="item">placeholder</div>
-          <div class="item">placeholder</div>
-          <div class="item">placeholder</div>
-          <div class="item">placeholder</div>
+          <div class="item">
+            <img src="assets/headphone.jpg" class="head" onclick="modal(1)">
+          </div>
+          <div class="item">
+              <img src="assets/monitor.jpg" class="mon" onclick="modal(2)">
+          </div>
+          <div class="item">
+              <img src="assets/keyboard.jpg" class="key" onclick="modal(3)">
+          </div>
+          <div class="item">
+              <img src="assets/webcam.jpg" class="web" onclick="modal(4)">
+          </div>
         </div>
+        
+        <div id="modal1" class="off">
+        <div class="modal-content">
+          <span class="close" onclick="modal(-1)">&times;</span>
+          <h2>Headphones</h2>
+          <p>Experience breathtaking sound that blocks out the people in your life.</p>
+          <img src="assets/music-john-cena.gif">
+        </div>
+      </div>
+
+      <div id="modal2" class="off">
+        <div class="modal-content">
+          <span class="close" onclick="modal(-2)">&times;</span>
+          <h2>Monitor</h2>
+          <p>Observe crystal clear photo and video of places you'll never visit.</p>
+          <img src="assets/e-click-big-screen.gif">
+        </div>
+      </div>
+      
+      <div id="modal3" class="off">
+        <div class="modal-content">
+          <span class="close" onclick="modal(-3)">&times;</span>
+          <h2>Keyboard and Mouse</h2>
+          <p>Dominate your workplace's slack and destroy your corporate enemies.</p>
+          <img src="assets/giphy.gif">
+        </div>
+      </div>
+
+      <div id="modal4" class="off">
+        <div class="modal-content">
+          <span class="close" onclick="modal(-4)">&times;</span>
+          <h2>Webcam</h2>
+          <p>Charm your next zoom meeting with full high definition 1080p recording.</p>
+          <img src="assets/littlerat-rat.gif">
+        </div>
+      </div>
+
         <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. 
   Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis 
